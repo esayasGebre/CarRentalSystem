@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerRental">
+   <children>
+      <Label layoutX="18.0" layoutY="14.0" text="Rental Form:" textFill="#d72929">
+         <font>
+            <Font name="Bodoni MT Bold" size="24.0" />
+         </font></Label>
+      <TextField fx:id="txtRentalid" layoutX="116.0" layoutY="233.0" prefHeight="25.0" prefWidth="133.0" />
+      <Label layoutX="61.0" layoutY="237.0" text="Rental ID: " />
+      <Label layoutX="51.0" layoutY="268.0" text="Rental Date:" />
+      <Label layoutX="45.0" layoutY="296.0" text="Return Date: " />
+      <Label layoutX="41.0" layoutY="323.0" text="Return Status: " />
+      <Button fx:id="saveRent" layoutX="326.0" layoutY="351.0" mnemonicParsing="false" onAction="#handelRent" prefHeight="25.0" prefWidth="65.0" text="Save" />
+      <Button fx:id="updateRent" layoutX="189.0" layoutY="351.0" mnemonicParsing="false" onAction="#handelRent" prefHeight="25.0" prefWidth="70.0" text="Update" />
+      <Button fx:id="cancelRent" layoutX="396.0" layoutY="351.0" mnemonicParsing="false" onAction="#handelRent" prefHeight="25.0" prefWidth="70.0" text="Cancel" />
+      <Label layoutX="41.0" layoutY="146.0" text="Employee ID: " />
+      <Label layoutX="41.0" layoutY="177.0" text="Customer ID: " />
+      <TextField fx:id="txtEmpid" layoutX="115.0" layoutY="139.0" prefHeight="25.0" prefWidth="133.0" />
+      <Button fx:id="removeRent" layoutX="263.0" layoutY="351.0" mnemonicParsing="false" onAction="#handelRent" text="Remove" />
+      <Button fx:id="editRent" layoutX="130.0" layoutY="351.0" mnemonicParsing="false" onAction="#handelRent" prefHeight="25.0" prefWidth="55.0" text="Edit" />
+      <Button fx:id="addRent" layoutX="70.0" layoutY="350.0" mnemonicParsing="false" onAction="#handelRent" prefHeight="25.0" prefWidth="55.0" text="Add" />
+      <Button fx:id="btnSearchRent" layoutX="161.0" layoutY="75.0" mnemonicParsing="false" onAction="#handelRent" text="Search by ID: " />
+      <TextField fx:id="txtSearchrentid" layoutX="26.0" layoutY="75.0" prefHeight="25.0" prefWidth="133.0" />
+      <Label layoutX="76.0" layoutY="204.0" text="Car ID: " />
+      <TableView fx:id="mytableview" layoutX="269.0" layoutY="78.0" prefHeight="258.0" prefWidth="504.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="dpRentalDate" layoutX="123.0" layoutY="264.0" prefHeight="25.0" prefWidth="133.0" />
+      <DatePicker fx:id="dpReturnDate" layoutX="121.0" layoutY="292.0" prefHeight="25.0" prefWidth="133.0" />
+      <ComboBox fx:id="comboCus" layoutX="115.0" layoutY="170.0" prefHeight="25.0" prefWidth="133.0" />
+      <ComboBox fx:id="comboCar" layoutX="117.0" layoutY="200.0" prefHeight="25.0" prefWidth="133.0" />
+      <ComboBox fx:id="comboRstatus" layoutX="121.0" layoutY="324.0" prefHeight="25.0" prefWidth="133.0" />
+   </children>
+</AnchorPane>

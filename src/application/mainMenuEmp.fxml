@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Mainmenu" minWidth="200.0" prefHeight="300.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Button fx:id="btnCar" layoutX="31.0" layoutY="84.0" mnemonicParsing="false" onAction="#manageCar" prefHeight="49.0" prefWidth="140.0" text="Car" textAlignment="CENTER" textFill="#b52e2e">
+         <font>
+            <Font name="Bodoni MT Black" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnCustomer" layoutX="31.0" layoutY="141.0" mnemonicParsing="false" onAction="#manageCustomer" prefHeight="49.0" prefWidth="140.0" text="Customer" textAlignment="CENTER" textFill="#b52e2e">
+         <font>
+            <Font name="Bodoni MT Black" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnRental" layoutX="31.0" layoutY="197.0" mnemonicParsing="false" onAction="#manageRental" prefHeight="49.0" prefWidth="140.0" text="Rental" textAlignment="CENTER" textFill="#b52e2e">
+         <font>
+            <Font name="Bodoni MT Black" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnLogout" layoutX="31.0" layoutY="257.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="140.0" text="Logout" />
+      <Label layoutX="13.0" layoutY="35.0" prefHeight="17.0" prefWidth="330.0" text="-----Main Menu-----" textFill="#830707">
+         <font>
+            <Font name="Bodoni MT Black" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="14.0" prefHeight="17.0" prefWidth="119.0" text="Car Rental System" textFill="#971a1a">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

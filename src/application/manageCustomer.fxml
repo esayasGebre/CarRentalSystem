@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="350.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerCustomer">
+   <children>
+      <Label layoutX="10.0" layoutY="14.0" text="Customer Management Form" textFill="#cd1b1b">
+         <font>
+            <Font name="Bodoni MT Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerid" layoutX="125.0" layoutY="151.0" />
+      <TextField fx:id="txtFname" layoutX="124.0" layoutY="181.0" />
+      <Label layoutX="54.0" layoutY="155.0" text="CustomerID:" />
+      <Label layoutX="60.0" layoutY="185.0" text="First Name:" />
+      <Label layoutX="60.0" layoutY="214.0" text="Last Name: " />
+      <Label layoutX="48.0" layoutY="245.0" text="Date of BIrth: " />
+      <Label layoutX="330.0" layoutY="152.0" text="Street: " />
+      <Label layoutX="331.0" layoutY="184.0" text="State: " />
+      <Label layoutX="316.0" layoutY="216.0" text="zip code: " />
+      <TextField fx:id="txtLname" layoutX="123.0" layoutY="210.0" />
+      <TextField fx:id="txtStreet" layoutX="371.0" layoutY="148.0" />
+      <TextField fx:id="txtState" layoutX="370.0" layoutY="180.0" />
+      <TextField fx:id="txtZipno" layoutX="370.0" layoutY="212.0" prefHeight="25.0" prefWidth="94.0" />
+      <TextField fx:id="txtHousno" layoutX="371.0" layoutY="243.0" prefHeight="25.0" prefWidth="94.0" />
+      <Label layoutX="312.0" layoutY="247.0" text="House No: " />
+      <Button fx:id="addCus" layoutX="77.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleCustomer" prefHeight="25.0" prefWidth="60.0" text="Add" />
+      <Button fx:id="updateCus" layoutX="206.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleCustomer" text="Update" />
+      <Button fx:id="removeCus" layoutX="271.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleCustomer" text="Remove" />
+      <Button fx:id="cancelCus" layoutX="399.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleCustomer" text="Cancel" />
+      <Button fx:id="saveCus" layoutX="337.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleCustomer" prefHeight="25.0" prefWidth="52.0" text="Save" />
+      <Button fx:id="btnSearchCus" layoutX="465.0" layoutY="54.0" mnemonicParsing="false" onAction="#handleCustomer" prefHeight="25.0" prefWidth="85.0" text="Search by ID:" />
+      <TextField fx:id="txtSearchid" layoutX="301.0" layoutY="54.0" />
+      <TextField fx:id="txtCity" layoutX="371.0" layoutY="117.0" />
+      <Label layoutX="323.0" layoutY="121.0" text="City: " />
+      <Button fx:id="editCus" layoutX="147.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleCustomer" prefHeight="25.0" prefWidth="51.0" text="Edit" />
+      <TextField fx:id="txtempid" layoutX="123.0" layoutY="121.0" prefHeight="25.0" prefWidth="94.0" />
+      <Label layoutX="77.0" layoutY="125.0" text="Emp ID:" />
+      <DatePicker fx:id="dpdob" layoutX="125.0" layoutY="241.0" prefHeight="25.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>

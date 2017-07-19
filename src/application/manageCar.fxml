@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="272.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerCar">
+   <children>
+      <Label layoutX="88.0" layoutY="108.0" text="Car ID: " />
+      <Label layoutX="87.0" layoutY="139.0" text="Model: " />
+      <Label layoutX="59.0" layoutY="170.0" text="No of Seats: " />
+      <Label layoutX="328.0" layoutY="168.0" text="Availability: " />
+      <Label layoutX="289.0" layoutY="136.0" text="Rent Price per Day:" />
+      <TextField fx:id="txtCarid" layoutX="127.0" layoutY="104.0" />
+      <TextField fx:id="txtModel" layoutX="127.0" layoutY="135.0" />
+      <TextField fx:id="txtNoofseates" layoutX="127.0" layoutY="166.0" />
+      <TextField fx:id="txtAvailability" layoutX="394.0" layoutY="164.0" />
+      <TextField fx:id="txtRentprice" layoutX="392.0" layoutY="132.0" />
+      <Label layoutX="14.0" layoutY="14.0" text="Car Management Form: " textFill="#a42323">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="addCar" layoutX="140.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleCar" prefHeight="25.0" prefWidth="68.0" text="Add" />
+      <Button fx:id="updateCar" layoutX="285.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleCar" text="Update" />
+      <Button fx:id="removeCar" layoutX="345.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleCar" text="Remove" />
+      <Button fx:id="cancelCar" layoutX="478.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleCar" text="Cancel" />
+      <Button fx:id="saveCar" layoutX="409.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleCar" prefHeight="25.0" prefWidth="64.0" text="Save" />
+      <Button fx:id="editCar" layoutX="214.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleCar" prefHeight="25.0" prefWidth="64.0" text="Edit" />
+      <Button fx:id="btnSearchcar" layoutX="482.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleCar" text="Search by Car ID" />
+      <TextField fx:id="txtSearchcarid" layoutX="320.0" layoutY="45.0" />
+   </children>
+</AnchorPane>

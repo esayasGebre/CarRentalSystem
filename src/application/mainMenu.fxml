@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Mainmenu" minWidth="200.0" prefHeight="300.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Button fx:id="btnEmployee" layoutX="31.0" layoutY="205.0" mnemonicParsing="false" onAction="#manageEmployee" prefHeight="43.0" prefWidth="140.0" text="Employee" textAlignment="CENTER" textFill="#b52e2e">
+         <font>
+            <Font name="Bodoni MT Black" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnCar" layoutX="31.0" layoutY="82.0" mnemonicParsing="false" onAction="#manageCar" prefHeight="35.0" prefWidth="140.0" text="Car" textAlignment="CENTER" textFill="#b52e2e">
+         <font>
+            <Font name="Bodoni MT Black" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnCustomer" layoutX="31.0" layoutY="123.0" mnemonicParsing="false" onAction="#manageCustomer" prefHeight="35.0" prefWidth="140.0" text="Customer" textAlignment="CENTER" textFill="#b52e2e">
+         <font>
+            <Font name="Bodoni MT Black" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnRental" layoutX="31.0" layoutY="164.0" mnemonicParsing="false" onAction="#manageRental" prefHeight="35.0" prefWidth="140.0" text="Rental" textAlignment="CENTER" textFill="#b52e2e">
+         <font>
+            <Font name="Bodoni MT Black" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnLogout" layoutX="33.0" layoutY="264.0" mnemonicParsing="false" onAction="#logOut" prefHeight="25.0" prefWidth="140.0" text="Logout" />
+      <Label layoutX="103.0" layoutY="31.0" prefHeight="22.0" prefWidth="179.0" text="-----Main Menu-----" textFill="#830707">
+         <font>
+            <Font name="Bodoni MT Black" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="14.0" prefHeight="17.0" prefWidth="111.0" text="Car Rental System" textFill="#971a1a">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

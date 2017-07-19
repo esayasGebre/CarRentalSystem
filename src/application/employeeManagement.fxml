@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="350.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerEmployee">
+   <children>
+      <Label layoutX="15.0" layoutY="14.0" text="Employee Management Form" textFill="#942117">
+         <font>
+            <Font name="Bodoni MT Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmpid" layoutX="91.0" layoutY="113.0" prefHeight="25.0" prefWidth="109.0" />
+      <TextField fx:id="txtFname" layoutX="91.0" layoutY="171.0" />
+      <Label layoutX="20.0" layoutY="117.0" text="EmployeeID:" />
+      <Label layoutX="27.0" layoutY="175.0" text="First Name:" />
+      <Label layoutX="27.0" layoutY="204.0" text="Last Name: " />
+      <Label layoutX="15.0" layoutY="235.0" text="Date of BIrth: " />
+      <Label layoutX="281.0" layoutY="142.0" text="Street: " />
+      <Label layoutX="282.0" layoutY="174.0" text="State: " />
+      <Label layoutX="267.0" layoutY="206.0" text="zip code: " />
+      <TextField fx:id="txtLname" layoutX="90.0" layoutY="200.0" />
+      <TextField fx:id="txtStreet" layoutX="322.0" layoutY="138.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="txtState" layoutX="321.0" layoutY="170.0" />
+      <TextField fx:id="txtZipno" layoutX="321.0" layoutY="202.0" prefHeight="25.0" prefWidth="86.0" />
+      <TextField fx:id="txtHousno" layoutX="322.0" layoutY="233.0" prefHeight="25.0" prefWidth="86.0" />
+      <Label layoutX="263.0" layoutY="237.0" text="House No: " />
+      <Label layoutX="483.0" layoutY="142.0" text="User Name: " />
+      <Label layoutX="490.0" layoutY="173.0" text="Password: " />
+      <Label layoutX="58.0" layoutY="147.0" text="Role: " />
+      <TextField fx:id="txtUsername" layoutX="548.0" layoutY="138.0" />
+      <Button fx:id="addEmp" layoutX="248.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleEmployee" prefHeight="25.0" prefWidth="66.0" text="Add" />
+      <Button fx:id="updateEmp" layoutX="384.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleEmployee" prefHeight="25.0" prefWidth="56.0" text="Update" />
+      <Button fx:id="removeEmp" layoutX="449.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleEmployee" text="Remove" />
+      <Button fx:id="cancelEmp" layoutX="579.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleEmployee" text="Cancel" />
+      <Button fx:id="saveEmp" layoutX="516.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleEmployee" prefHeight="25.0" prefWidth="59.0" text="Save" />
+      <Button fx:id="btnSearchemp" layoutX="568.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleEmployee" prefHeight="25.0" prefWidth="125.0" text="Search by Emp ID:" />
+      <PasswordField fx:id="txtPassword" layoutX="548.0" layoutY="169.0" />
+      <Label layoutX="290.0" layoutY="112.0" text="City" />
+      <TextField fx:id="txtCity" layoutX="321.0" layoutY="109.0" />
+      <TextField fx:id="txtSearchid" layoutX="457.0" layoutY="40.0" prefHeight="25.0" prefWidth="109.0" />
+      <Button fx:id="editEmp" layoutX="319.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleEmployee" prefHeight="25.0" prefWidth="56.0" text="Edit" />
+      <ComboBox fx:id="comboRole" layoutX="91.0" layoutY="142.0" prefWidth="150.0" />
+      <DatePicker fx:id="dpdob" layoutX="91.0" layoutY="230.0" prefHeight="25.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>
