@@ -15,20 +15,15 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Henok B
- */
+
 public class CarRentDBmanagement {
 
     public Connection getConnection() {
         Connection con;
-
         try {
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/carrent?zeroDateTimeBehavior=convertToNull", "Admin", "123");
-
-          
             return con;
+            
         } catch (Exception e) {
             e.printStackTrace();
             return null;
